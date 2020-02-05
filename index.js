@@ -48,7 +48,7 @@ server.get('/users/:index', checkUserInArray, (req, res) =>{
 });
 
 //Adiciona users
-server.post('/users',checkUserExists, (req,res) => {
+server.post('/users', (req,res) => {
   const { nome } = req.body;
 
   users.push(nome);
